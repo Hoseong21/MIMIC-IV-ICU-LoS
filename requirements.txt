@@ -1,0 +1,30 @@
+# Core
+python==3.9
+numpy==1.24.4
+pandas==2.0.3
+scikit-learn==1.2.2
+
+# Visualization / EDA
+matplotlib==3.7.5
+seaborn==0.12.2
+
+# Tree-based Models
+xgboost==1.7.6
+lightgbm==4.1.0
+catboost==1.2.3
+
+# Hyperparameter Optimization
+optuna==3.4.0
+
+# XAI
+shap==0.42.1
+lime==0.2.0.1
+
+# AutoML
+autogluon.tabular==0.8.2
+
+# Deep Learning (FT-Transformer / TabPFN)
+torch==2.0.1
+einops==0.7.0
+tabpfn==2.0.4
+
