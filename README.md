@@ -7,11 +7,10 @@
 
 ## 📌 Project Info
 
-| | |
-|---|---|
 | **Period** | 2024.09.15 – 2024.12.09 |
+|---|---|
 | **Team** | 이재용(팀장), 김대건, 송호성, 김지웅 |
-| **Course** | 데이터 애널리틱스 프로젝트 |
+| **Course** | 데이터애널리틱스 팀프로젝트 |
 | **Data** | MIMIC-IV v2.2 |
 
 <br>
@@ -65,30 +64,26 @@
 
 ### 1. Vital Features
 
-ICU 입실 후 48시간 구간 데이터를 기준으로 요약 통계량을 생성하여 환자의 생리적 상태와 변동성을 모델에 반영하였습니다.
+ICU 입실 후 48시간 구간 데이터를 기준으로 요약 통계량(`mean / min / max / std`)을 생성하여 환자의 생리적 상태와 변동성을 모델에 반영하였습니다. GCS 항목은 `mean / min / max` 만 사용하였습니다.
 
-| Feature | Description | Aggregation |
-|---|---|---|
-| Heart Rate | 심박수 | mean / min / max / std |
-| Respiratory Rate | 호흡수 | mean / min / max / std |
-| SpO₂ | 산소포화도 | mean / min / max / std |
-| Body Temperature | 체온 | mean / min / max / std |
-| GCS Eye / Verbal / Motor | 의식 수준 지표 | mean / min / max |
+- Heart Rate (심박수)
+- Respiratory Rate (호흡수)
+- SpO₂ (산소포화도)
+- Body Temperature (체온)
+- GCS Eye / Verbal / Motor (의식 수준 지표)
 
 <br>
 
 ### 2. Lab Features
 
-ICU 입실 후 48시간 구간 데이터를 기준으로 각 항목의 `mean / min / max / std` 를 생성하였습니다.
+ICU 입실 후 48시간 구간 데이터를 기준으로 각 항목의 `mean / min / max / std` 를 생성하였습니다. 결측률이 높은 Albumin, Bilirubin은 제외하였습니다.
 
-| Feature | Clinical Meaning |
-|---|---|
-| Creatinine, BUN | 신장 기능 |
-| WBC | 감염 및 염증 |
-| Platelet Count, Glucose | 혈액 기능, 혈당 |
-| Lactate, AnionGap, Bicarbonate, pH | 쇼크 및 산-염기 균형 |
-| Potassium, Sodium | 전해질 |
-| INR | 응고 기능 |
+- Creatinine, BUN (신장 기능)
+- WBC (감염 및 염증)
+- Platelet Count, Glucose (혈액 기능, 혈당)
+- Lactate, AnionGap, Bicarbonate, pH (쇼크 및 산-염기 균형)
+- Potassium, Sodium (전해질)
+- INR (응고 기능)
 
 <br>
 
